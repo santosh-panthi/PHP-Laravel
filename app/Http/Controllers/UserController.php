@@ -10,7 +10,8 @@ class UserController extends Controller
 
 {
     function getUser()  {
-        return DB::select('select  * from details ');
+       $details =DB::select('select  * from details ');
+       return view('user',['details' => $details]);
 
     }
     //
