@@ -7,3 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::middleware('check')->group(function(){
+
+    Route::view('home','home');
+    Route::view('about','about');
+});
