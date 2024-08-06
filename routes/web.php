@@ -3,9 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::view('form','form');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::post('details', [UserController::class, 'getUser']);
