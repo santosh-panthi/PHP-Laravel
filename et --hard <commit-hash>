@@ -1,0 +1,15 @@
+[33m0d03f86[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m783df33[m HEAD@{1}: commit: Database
+[33m0d03f86[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{2}: commit: get data using Eloquent Model ORM
+[33m8690d90[m HEAD@{3}: commit: MySql connection and showing data in tabular form
+[33m2ec9a35[m HEAD@{4}: commit: MySql connection without migration
+[33m1226d51[m HEAD@{5}: commit: MySql connection with migration
+[33m29aaea7[m HEAD@{6}: commit: Route middlware practice
+[33m58d5d97[m HEAD@{7}: commit: Group middlware practice
+[33m2192010[m HEAD@{8}: commit: global middlware practice
+[33m9a2c3d0[m HEAD@{9}: commit: this is About form validation
+[33m9b8ae26[m HEAD@{10}: reset: moving to HEAD~1
+[33m215ba13[m HEAD@{11}: commit: first commit
+[33m9b8ae26[m HEAD@{12}: commit: Install Pest
+[33mb87eb06[m HEAD@{13}: Branch: renamed refs/heads/master to refs/heads/main
+[33mb87eb06[m HEAD@{15}: commit (initial): Set up a fresh Laravel app

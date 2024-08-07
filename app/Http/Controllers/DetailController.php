@@ -4,44 +4,45 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Models\Detail;
 
 class DetailController extends Controller
 {
     function getDetails(){
-        // $data = DB::table('details')->where("id","1")->get();
-
-        // $result = DB::table('details')->insert([
-        //     "name"=>"jojo",
-        //     "subject"=>".net",
-        //     "faculty"=>"9"
+        // $result = Detail::find(1);
+        // $result  = Detail::insert([
+        //     'name'=>'dddd',
+        //     'subject'=>'java',
+        //     'faculty'=>'23'
+            
         // ]);
         // if($result){
-        //     echo'sucessfully inserted';
+        //     return "Data inserted successfully";
         // }
         // else{
-        //     echo'insertion failed';
+        //     return "Data not inserted";
         // }
-        
-        // $result = DB::table('details')->where("id","1")->update(['name'=>"allu"]);
+        // $result = [$result];
+        // $result = Detail::where('subject','java')->update(['name'=> "chiss"]);
         // if($result){
-        //     echo'sucessfully updated';
+        //     return "Data updated successfully";
         // }
         // else{
-        //     echo'updation failed';
+        //     return "Data not updated";
         // }
-        // $result = DB::table('details')->where("faculty","9")->delete();
+        // $result = Detail::where('subject','java')->delete();
         // if($result){
-        //     echo'sucessfully updated';
+        //     return "Data updated successfully";
         // }
         // else{
-        //     echo'updation failed';
+        //     return "Data not updated";
         // }
+
+
+
+
+        $data = Detail::get();
         
-        
-        
-        
-        $data = DB::table('details')->get();
 
         return view('user',['details'=>$data]);
 
