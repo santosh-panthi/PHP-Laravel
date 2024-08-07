@@ -1,11 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use  App\Http\Controllers\DetailController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/detail',[DetailController::class,"getDetails"]);
+
+
+Route::view('login','login');
+
+Route::post('login',[UserController::class,'login']);
+Route::get('logout',[UserController::class,'logout']);
+Route::view('profile','profile');
+
 
